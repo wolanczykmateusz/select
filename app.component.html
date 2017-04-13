@@ -1,7 +1,7 @@
 <my-menu></my-menu>
 <div class="app-content">
-    <ng-select [values]="data" placeholder="Dupa" displayProperty="lastname" [(selectedValue)]="selectedPerson"></ng-select>
-    <ng-select [values]="data" placeholder="Dupa" displayProperty="lastname"></ng-select>
+    <ng-select [values]="data" placeholder="Placeholder" displayProperty="lastname" [(selectedValue)]="selectedPerson"></ng-select>
+    <ng-select [values]="data" placeholder="Placeholder" displayProperty="lastname"></ng-select>
     <div>{{selectedPerson.firstname}} {{selectedPerson.lastname}}</div>
     <button type="button" (click)="selectOsama()">Select Osama</button>
     <router-outlet></router-outlet>
