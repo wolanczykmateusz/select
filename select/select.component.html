@@ -1,0 +1,4 @@
+<select [ngModel]="selectedValue" (ngModelChange)="selectedChanged($event)" class="btn dropdown-toggle btn-default">
+    <option *ngIf="!selectedValue" selected hidden disabled [ngValue]="placeholderItem">{{placeholder}}</option>
+    <option *ngFor="let item of values" [ngValue]="item" >{{displayProperty ? item[displayProperty] : item}}</option>
+</select>
